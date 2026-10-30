@@ -1,0 +1,32 @@
+@use '../utils' as *;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    color: $secondary-text-color;
+  }
+
+  &__value {
+    margin: 0;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    color: $field-text-color;
+    font-style: normal;
+    text-decoration: none;
+
+    @include hover(color, $accent-color);
+  }
+}

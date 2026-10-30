@@ -1,0 +1,30 @@
+@use '../utils' as *;
+
+.categories {
+  @include content-padding-inline;
+
+  &__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+
+  &__list {
+    display: grid;
+    gap: 40px;
+    padding-block: 46px;
+
+    @include on-tablet {
+      padding-block: 56px;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+
+    @include on-desktop {
+      width: 324px;
+    }
+  }
+}

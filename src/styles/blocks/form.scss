@@ -1,0 +1,48 @@
+@use '../utils' as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__field {
+    box-sizing: border-box;
+    height: 48px;
+    padding: 14px 16px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: $surface-color;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0.15px;
+    color: $field-text-color;
+    transition:
+      border-color $effect-duration,
+      background-color $effect-duration;
+
+    &::placeholder {
+      color: $secondary-text-color;
+    }
+
+    &:hover {
+      background-color: #fff;
+      border-color: $surface-dark-color;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: #fff;
+      border-color: $accent-color;
+    }
+
+    &--message {
+      height: 148px;
+      resize: none;
+    }
+  }
+
+  &__submit {
+    margin-top: 16px;
+  }
+}

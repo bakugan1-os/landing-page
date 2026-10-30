@@ -1,0 +1,44 @@
+@use '../utils' as *;
+
+.category {
+  &__photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include on-tablet {
+      gap: 24px;
+    }
+  }
+
+  &__photo-link {
+    display: block;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: $surface-color;
+  }
+
+  &__photo {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+
+    @include hover(transform, scale(1.05));
+
+    @include on-tablet {
+      aspect-ratio: 288 / 184;
+    }
+  }
+
+  &__title {
+    margin: 16px 0 0;
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 700;
+
+    @include on-tablet {
+      font-size: 24px;
+    }
+  }
+}

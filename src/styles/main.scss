@@ -1,3 +1,17 @@
-body {
-  margin: 0;
-}
+@use 'blocks/page';
+@use 'blocks/header';
+@use 'blocks/top-bar';
+@use 'blocks/icon';
+@use 'blocks/menu';
+@use 'blocks/nav';
+@use 'blocks/section-title';
+@use 'blocks/main-content';
+@use 'blocks/button';
+@use 'blocks/product';
+@use 'blocks/recommended';
+@use 'blocks/timeless';
+@use 'blocks/category';
+@use 'blocks/categories';
+@use 'blocks/contact';
+@use 'blocks/form';
+@use 'blocks/contacts';
