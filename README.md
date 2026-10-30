@@ -19,3 +19,12 @@ A responsive landing page for the Bang & Olufsen audio brand.
 - Product and category grids that reflow across breakpoints
 - Contact form with native validation
 - SVG icons
+
+## Getting started
+
+```bash
+git clone https://github.com/bakugan1-os/landing-page.git
+cd landing-page
+npm install
+npm start
+```
